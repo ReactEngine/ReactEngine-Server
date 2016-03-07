@@ -1,0 +1,49 @@
+{
+  "initial:before": {
+    "loopback#favicon": {}
+  },
+  "initial": {
+    "compression": {},
+    "cors": {
+      "params": {
+        "origin": true,
+        "credentials": true,
+        "maxAge": 86400
+      }
+    },
+    "express-bunyan-logger": {
+      "params": {
+        "name": "request",
+        "streams": [
+          {
+            "level": "info",
+            "path": "server/logs/request-info.log"
+          },
+          {
+            "level": "error",
+            "path": "server/logs/request-error.log"
+          }
+        ]
+      }
+    }
+  },
+  "session": {
+  },
+  "auth": {
+  },
+  "parse": {
+  },
+  "routes": {
+    "loopback#rest": {
+      "paths": ["${restApiRoot}"]
+    }
+  },
+  "files": {
+  },
+  "final": {
+    "loopback#urlNotFound": {}
+  },
+  "final:after": {
+    "loopback#errorHandler": {}
+  }
+}
