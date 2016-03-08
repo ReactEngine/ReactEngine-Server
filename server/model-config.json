@@ -15,22 +15,22 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "TodosDSMysql"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "TodosDSMysql",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "TodosDSMysql",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "TodosDSMysql",
     "public": false
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "TodosDSMysql",
     "public": false
   },
   "Todo": {
