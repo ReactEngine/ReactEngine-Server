@@ -4,7 +4,7 @@ module.exports = {
     "url": "mongodb://10.10.10.154:27017,10.10.0.4:27017,10.10.10.172:27017/?readPreference=primary",
     // "host":"10.10.10.172",
     // "port": 27017,
-    "database": "test",
+    "database": "Todos",
     "connector": "mongodb",
     "debug": "true",
     "server": {

@@ -2,5 +2,16 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "TodosDSMysql": {
+    "host": "10.10.10.148",
+    "port": 3306,
+    "database": "Todos",
+    "username": "Todos",
+    "password": "Todos",
+    "name": "TodosDSMysql",
+    "connector": "mysql",
+    "debug": "true",
+    "user": "Todos"
   }
 }

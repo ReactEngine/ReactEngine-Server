@@ -73,3 +73,7 @@ coverage
 node_modules
 npm-debug.log
 arc-manager.json
+
+# Web
+bower_components
+client/dist

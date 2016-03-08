@@ -32,5 +32,11 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Todo": {
+    "dataSource": "TodosDSMysql",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   }
 }

@@ -1,0 +1,36 @@
+{
+  "name": "Todo",
+  "plural": "Todos",
+  "base": "PersistedModel",
+  "strict": true,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "persistUndefinedAsNull": true,
+  "mixins": {
+    "TimeStamp": {
+      "required": false
+    }
+  },
+  "properties": {
+    "completed": {
+      "type": "boolean",
+      "required": true,
+      "comments": "是否完成"
+    },
+    "text": {
+      "type": "string",
+      "comments": "Todo 文本"
+    },
+    "id": {
+      "type": "string",
+      "id": true,
+      "defaultFn": "guid"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
