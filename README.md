@@ -9,7 +9,7 @@
 其他文件:     
 	```nodemon.json```: nodemon 配置文件,用于开发阶段 watch 文件更改并自动重启 server.  
 ### 如何运行 
-#### 1. 安装 Nodejs,Strongloop,Mysql-Server 
+#### 1. 环境准备 
 安装**最新版** Nodejs: 详见 [nodejs.org](https://nodejs.org/en/download/)   
 安装 Strongloop: 执行 ```npm install -g strongloop```  
 安装 Mysql-Server, 并创建数据库 ```Todos```
