@@ -11,7 +11,6 @@
     "password": "Todos",
     "name": "TodosDSMysql",
     "connector": "mysql",
-    "debug": "true",
-    "user": "Todos"
+    "debug": "true"
   }
 }
