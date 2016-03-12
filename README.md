@@ -15,7 +15,7 @@ ReactEngine 的默认服务器,基于 [Strongloop](https://strongloop.com) 的 A
 安装 Mysql-Server, 并创建数据库 ```Todos```
 #### 2. Clone 仓库并安装依赖:
 ```
-git clone git@github.com:ReactEngine/ReactEngine-Server.git
+git clone https://github.com/ReactEngine/ReactEngine-Server.git
 cd ReactEngine-Server  
 npm install -d
 ```
