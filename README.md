@@ -9,17 +9,17 @@
 其他文件:     
 	```nodemon.json```: nodemon 配置文件,用于开发阶段 watch 文件更改并自动重启 server.  
 ### 如何运行 
-1. 安装 Nodejs,Strongloop,Mysql-Server 
+#### 1. 安装 Nodejs,Strongloop,Mysql-Server 
 安装 Nodejs: 详见 [nodejs 官网](https://nodejs.org/en/download/)   
 安装 Strongloop: ```npm install -g strongloop```  
 安装 Mysql-Server, 并创建数据库 ```Todos```
-2. Clone 仓库并安装依赖:
+#### 2. Clone 仓库并安装依赖:
 ```
 git clone git@github.com:ReactEngine/ReactEngine-Server.git
 cd ReactEngine-Server  
 npm install -d
 ```
-3. 修改 ```server/datasources.json``` 中的配置:
+#### 3. 修改 ```server/datasources.json``` 中的配置:
 ```
   "TodosDSMysql": {
     "host": "10.10.10.148", //改为你的 Mysql 服务器的 ip 地址
@@ -33,7 +33,7 @@ npm install -d
   }
 ```
 确保以上的用户名和密码有权限访问该数据库.  
-4. 启动 Server
+#### 4. 启动 Server
 执行以下命令以启动 Server:
 ```      
 NODE_ENV="development" node . 
@@ -46,7 +46,7 @@ npm install -g nodemon
 ```
 并在当前目录下运行命令 ```nodemon``` 以启动服务器.
 
-6.当看到 Console 输出:
+#### 5.当看到 Console 输出:
 ```
 Web server listening at: http://0.0.0.0:3000
 Browse your REST API at http://0.0.0.0:3000/explorer
