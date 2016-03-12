@@ -3,7 +3,7 @@
 目的: 快速开发,原则上一个 JS 工程师可以搞定 iOS/Android/Server 开发.
 
 ## Server
-基于 [Strongloop](https://strongloop.com) 的 API Server.  
+ReactEngine 的默认服务器,基于 [Strongloop](https://strongloop.com) 的 API Server.  
 ### 目录结构
 参考 [Strongloop 工程结构](https://docs.strongloop.com/display/public/LB/Standard+project+structure)  
 其他文件:     
