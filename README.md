@@ -3,15 +3,15 @@
 目的: 快速开发,原则上一个 JS 工程师可以搞定 iOS/Android/Server 开发.
 
 ## Server
-基于 [Stringloop](https://strongloop.com) 的 API Server.  
+基于 [Strongloop](https://strongloop.com) 的 API Server.  
 ### 目录结构
 参考 [Strongloop 工程结构](https://docs.strongloop.com/display/public/LB/Standard+project+structure)  
 其他文件:     
 	```nodemon.json```: nodemon 配置文件,用于开发阶段 watch 文件更改并自动重启 server.  
 ### 如何运行 
 #### 1. 安装 Nodejs,Strongloop,Mysql-Server 
-安装 Nodejs: 详见 [nodejs 官网](https://nodejs.org/en/download/)   
-安装 Strongloop: ```npm install -g strongloop```  
+安装**最新版** Nodejs: 详见 [nodejs.org](https://nodejs.org/en/download/)   
+安装 Strongloop: 执行 ```npm install -g strongloop```  
 安装 Mysql-Server, 并创建数据库 ```Todos```
 #### 2. Clone 仓库并安装依赖:
 ```
