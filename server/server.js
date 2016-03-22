@@ -1,7 +1,20 @@
 var loopback = require('loopback');
 var boot = require('loopback-boot');
-
+// var bunyan = require('bunyan');
+// var loggerConfig = {
+//   "name": "component",
+//   "streams": [{
+//     "level": "info",
+//     "path": "server/logs/component-info.log"
+//   }, {
+//     "level": "error",
+//     "path": "server/logs/component-error.log"
+//   }]
+// }
+// var rootLogger = bunyan.createLogger(loggerConfig);
+// var logger = require('loopback-component-logger')(rootLogger);
 var app = module.exports = loopback();
+require('loopback-ds-calculated-mixin')(app);
 
 app.start = function() {
   // start the web server

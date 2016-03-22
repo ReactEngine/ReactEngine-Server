@@ -16,9 +16,12 @@
     "loopback": "^2.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
+    "loopback-component-logger": "git@github.com:yantrashala/loopback-component-logger.git",
     "loopback-connector-mongodb": "^1.13.3",
     "loopback-connector-mysql": "^2.2.1",
+    "loopback-console": "^0.2.2",
     "loopback-datasource-juggler": "^2.39.0",
+    "loopback-ds-calculated-mixin": "^1.0.3",
     "loopback-ds-timestamp-mixin": "^3.2.2",
     "request": "^2.69.0",
     "serve-favicon": "^2.0.1"

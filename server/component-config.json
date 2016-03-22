@@ -1,5 +1,7 @@
 {
   "loopback-component-explorer": {
     "mountPath": "/explorer"
-  }
+  },
+  "loopback-component-logger": {
+   }
 }
