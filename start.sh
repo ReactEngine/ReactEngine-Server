@@ -15,6 +15,7 @@ sudo mkdir /log
 sudo chmod -R 777 /log
 
 # NODE_ENV=${ENV} node server/server.js
+# NODE_ENV="development" pm2 start server/server.js
 NODE_ENV=${ENV} pm2 --no-daemon start server/server.js
 
 # 启动
