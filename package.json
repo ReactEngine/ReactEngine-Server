@@ -16,7 +16,7 @@
     "loopback": "^2.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
-    "loopback-component-logger": "git@github.com:yantrashala/loopback-component-logger.git",
+    "loopback-component-logger": "https://github.com/yantrashala/loopback-component-logger.git",
     "loopback-connector-mongodb": "^1.13.3",
     "loopback-connector-mysql": "^2.2.1",
     "loopback-console": "^0.2.2",
