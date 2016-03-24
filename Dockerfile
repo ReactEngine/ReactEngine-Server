@@ -16,6 +16,7 @@ WORKDIR $BASE_DIR
 
 RUN . $HOME/.nvm/nvm.sh && \
     npm install -g pm2 && \
+    mkdir -p $HOME/.ssh && \
     ssh-keyscan github.com >> $HOME/.ssh/known_hosts
 
 # 防止 docker buid 缓存
