@@ -17,7 +17,9 @@ WORKDIR $BASE_DIR
 RUN . $HOME/.nvm/nvm.sh && \
     npm install -g pm2 && \
     mkdir -p $HOME/.ssh && \
-    ssh-keyscan github.com >> $HOME/.ssh/known_hosts
+    ssh-keyscan github.com >> $HOME/.ssh/known_hosts && \
+    echo "" > $HOME/.ssh/id_rsa && \
+    chmod 400 $HOME/.ssh/id_rsa
 
 # 防止 docker buid 缓存
 ENV REFRESHED_AT 2016324.01
