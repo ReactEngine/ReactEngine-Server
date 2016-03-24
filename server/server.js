@@ -34,10 +34,10 @@ app.start = function() {
 boot(app, __dirname, function(err) {
   if (err) throw err;
 
-  // console.log("====== automigrate models for TodosDSMysql ====================");
-  // app.datasources['TodosDSMysql'].automigrate(['User', 'AccessToken', 'ACL','RoleMapping','Role','Todo'], function(err) {
-  //    console.log(err);
-  //  });
+  console.log("====== automigrate models for TodosDSMysql ====================");
+  app.datasources['TodosDSMysql'].automigrate(['User', 'AccessToken', 'ACL','RoleMapping','Role','Todo'], function(err) {
+      console.log(err);
+    });
   // start the server if `$ node server.js`
   if (require.main === module)
     app.start();
