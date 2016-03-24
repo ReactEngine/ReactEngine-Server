@@ -14,12 +14,9 @@ RUN sudo DEBIAN_FRONTEND=noninteractive apt-get -y update && \
 
 WORKDIR $BASE_DIR
 
-RUN sudo chown -R node:node $HOME/.ssh && \
-    chmod 400 $HOME/.ssh/id_rsa && \
-    ssh-keyscan github.com >> $HOME/.ssh/known_hosts
-
 RUN . $HOME/.nvm/nvm.sh && \
-    npm install -g pm2
+    npm install -g pm2 && \
+    ssh-keyscan github.com >> $HOME/.ssh/known_hosts
 
 # 防止 docker buid 缓存
 ENV REFRESHED_AT 2016324.01
