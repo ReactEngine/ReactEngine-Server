@@ -15,7 +15,7 @@ RUN sudo DEBIAN_FRONTEND=noninteractive apt-get -y update && \
 WORKDIR $BASE_DIR
 
 RUN . $HOME/.nvm/nvm.sh && \
-    npm install -g pm2 && \
+    sudo npm install -g pm2 && \
     mkdir -p $HOME/.ssh && \
     ssh-keyscan github.com >> $HOME/.ssh/known_hosts && \
     echo "" > $HOME/.ssh/id_rsa && \
