@@ -11,14 +11,14 @@ else
 fi
 
 echo "ENV: "${ENV}
+sudo mkdir /log
 sudo chmod -R 777 /log
 
 # NODE_ENV=${ENV} node server/server.js
-
 NODE_ENV=${ENV} pm2 --no-daemon start server/server.js
 
-# 启动webservice
+# 启动
 #slc start 
 
-# 绑定webservice端口号
+# 绑定端口号
 #slc ctl env-set webservice "PORT"=3000
